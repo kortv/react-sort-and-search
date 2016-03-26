@@ -106,8 +106,8 @@ export default class App extends Component {
         <SearchBar />
         <Toolbar sortNames={this.sortNames} />
         <Button count={this.state.count} update={this.updateBtn} />
-        <p style={{ marginTop: '2rem' }}>{this.state.phrase}</p>
-        <UserList users={this.state.usersData} />
+        <p style={{ marginTop: '2rem' }}>{ this.state.phrase }</p>
+        <UserList users={ this.state.usersData } />
       </div>
     );
   }
