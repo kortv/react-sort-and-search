@@ -9,6 +9,9 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var autoprefixer = require('autoprefixer');
+var precss       = require('precss');
+
 
 module.exports = {
   devtool: 'source-map',
@@ -36,9 +39,12 @@ module.exports = {
     ],
 
     loaders: [
-      { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!resolve-url!sass?sourceMap")},
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!resolve-url!sass?sourceMap!postcss-loader")},
       {test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader"} 
     ]
+  },
+  postcss: function () {
+      return [autoprefixer, precss];
   },
   plugins: [
     new ExtractTextPlugin('style.css', { allChunks: true })
