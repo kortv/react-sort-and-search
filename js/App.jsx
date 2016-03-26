@@ -48,21 +48,25 @@ export default class App extends Component {
   sortNames = (e) => {
     const kind = e.target.getAttribute('data-kind');
     const way = this.state.nameWay ? 1 : -1;
-    const sortedByNames = this.state.usersData.sort((a, b) => {
-      if (a[kind] > b[kind]) {
+    const compareFunByName = (a, b) => {
+      if (a.name > b.name) {
         return way;
       }
-      if (a[kind] < b[kind]) {
+      if (a.name < b.name) {
         return -way;
       }
       return 0;
-    });
+    };
+    const compareFunByAge = (a, b) => (this.state.nameWay ? a.age - b.age : b.age - a.age);
+
+    const sortedData = kind ?
+      this.state.usersData.sort(compareFunByName) :
+      this.state.usersData.sort(compareFunByAge);
 
     this.setState({
-      usersData: sortedByNames,
+      usersData: sortedData,
       nameWay: !this.state.nameWay
     });
-    console.log('SortName');
   }
 
   updateBtn = () => {
