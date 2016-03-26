@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Biryani:400,300,200);
+
+.rc-intro {
+  background-color: #222;
+  padding: 5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Biryani', sans-serif;
+}
+
+.rc-img {
+  max-height: 80px;
+}
+
+.rc-title {
+  font-size: 5rem;
+  margin-top: 3rem;
+  color: #00D8FF;
+  font-weight: 200;
+  letter-spacing: -2px;
+}
+
+.rc-description {
+  font-size: 2rem;
+  color: #ccc;
+}

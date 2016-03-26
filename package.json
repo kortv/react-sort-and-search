@@ -1,0 +1,50 @@
+{
+  "name": "react-search-and-sort",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline --module-bind",
+    "hot": "webpack-dev-server --hot --inline --module-bind",
+    "generate-data": "node utils/generate-data.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^0.9.1",
+    "babel-core": "^6.7.2",
+    "babel-eslint": "^5.0.0",
+    "babel-loader": "^6.1.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "browser-sync": "^2.11.1",
+    "dreamjs": "^0.1.5",
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^4.2.3",
+    "estraverse-fb": "^1.3.1",
+    "jsonfile": "^2.2.3",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-stream": "^3.1.0"
+  },
+  "dependencies": {
+    "estraverse-fb": "^1.3.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "resolve-url": "^0.2.1",
+    "css-loader": "*",
+    "file-loader": "*",
+    "node-sass": "*",
+    "resolve-url-loader": "^1.4.2",
+    "sass": "*",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "url-loader": "*"
+  }
+}
