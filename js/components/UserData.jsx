@@ -1,12 +1,13 @@
 import React from 'react';
 
-export default function UserData(props) {
+export default function UserData({ handleClick, user }) {
+  const imgSrc = `images/${user.image}.svg`;
   return (
-    <div className="row">
-      <div className="col-xs-2">{props.user.image}</div>
-      <div className="col-xs-4">{props.user.name}</div>
-      <div className="col-xs-2">{props.user.age}</div>
-      <div className="col-xs-4">{props.user.phone}</div>
-    </div>
+    <tr onClick = {handleClick} data-id={user.id}>
+      <td data-id={user.id}><img src={imgSrc} /></td>
+      <td data-id={user.id}>{ user.name }</td>
+      <td data-id={user.id}>{ user.age }</td>
+      <td data-id={user.id}>{ user.phone }</td>
+    </tr>
   );
 }

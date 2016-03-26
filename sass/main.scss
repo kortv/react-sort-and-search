@@ -26,3 +26,25 @@
   font-size: 2rem;
   color: #ccc;
 }
+.usr-list {
+  border: 1px solid #CCC;
+  td, th {
+    vertical-align: middle !important;
+    text-align: center;
+  }
+}
+.act-usr {
+  padding: 20px;
+  border: 1px solid #CCC;
+  h2 {
+    text-align: center;
+  }
+}
+.toolbar {
+  margin: 10px 0;
+  button {
+    margin-right: 10px;
+  }
+}
+
+
