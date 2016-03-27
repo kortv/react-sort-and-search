@@ -5,7 +5,7 @@ export default function ({ user }) {
   return (
     <div className="col-sm-4">
       <div className="act-usr">
-        <img className="row img-responsive" src={imgSrc} alt="" />
+        <img className="img-responsive" src={imgSrc} alt={ user.image } />
         <h2>
           { user.name }
         </h2>

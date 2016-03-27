@@ -1,11 +1,3 @@
-
-// var HtmlWebpackPlugin = require('html-webpack-plugin')
-// var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
-//   template: __dirname + '/app/index.html',
-//   filename: 'index.html',
-//   inject: 'body'
-// });
-
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
