@@ -1,5 +1,5 @@
 # Challenge of JS Raccoon
-<br/><br/>
+
 npm i webpack -g
 <br/>
 npm i webpack-dev-server -g
