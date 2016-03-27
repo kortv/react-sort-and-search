@@ -12,4 +12,4 @@ for runing hot-reloaded server
 <br/>
 online link
 <br/>
-kortv.github.io/react-sort/
+http://kortv.github.io/react-sort/
