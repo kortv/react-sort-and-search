@@ -31,7 +31,7 @@ module.exports = {
     ],
 
     loaders: [
-      { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!resolve-url!sass?sourceMap!postcss-loader")},
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?sourceMap!postcss-loader")},
       {test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader"} 
     ]
   },
