@@ -7,9 +7,9 @@ export default function UserList({ handleClick, users }) {
   ));
 
   return (
-    <div className="col-sm-8">
-      <div className="usr-list">
-        <table className="table table-striped">
+    <div className='col-sm-8'>
+      <div className='usr-list'>
+        <table className='table table-striped'>
           <thead>
             <tr>
               <th>Image</th>

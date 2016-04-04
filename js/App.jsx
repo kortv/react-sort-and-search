@@ -18,7 +18,7 @@ export default class App extends Component {
       usersData: [{ image: 'owl' }],
       foundUsersData: [{ image: 'owl' }],
       curUser: [{ image: 'owl' }],
-      curUserId: 0
+      curUserId: 0,
     };
     this.loadUsersData();
   }
@@ -28,7 +28,7 @@ export default class App extends Component {
            this.setState({
              usersData: data.data,
              foundUsersData: data.data,
-             curUser: [data.data[0]]
+             curUser: [data.data[0]],
            });
          })
        .catch((response) => {
@@ -42,7 +42,7 @@ export default class App extends Component {
 
     this.setState({
       curUser: current,
-      curUserId: id
+      curUserId: id,
     });
   }
   sortNames = (e) => {
@@ -65,23 +65,23 @@ export default class App extends Component {
 
     this.setState({
       foundUsersData: sortedData,
-      nameWay: !this.state.nameWay
+      nameWay: !this.state.nameWay,
     });
   }
   handleChange = (e) => {
     const regex = new RegExp(e.target.value, 'i');
     const found = this.state.usersData.filter(obj => regex.test(obj.name));
     this.setState({
-      foundUsersData: found
+      foundUsersData: found,
     });
   }
 
   render() {
     return (
-      <div className="container app">
+      <div className='container app'>
         <SearchBar handleChange={this.handleChange} />
         <Toolbar sortNames={this.sortNames} />
-        <div className="row">
+        <div className='row'>
           <ActiveUser user={ this.state.curUser[0] } />
           <UserList handleClick={ this.handleClick } users={ this.state.foundUsersData } />
         </div>

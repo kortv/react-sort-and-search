@@ -3,13 +3,13 @@ import React from 'react';
 export default function ({ user }) {
   const imgSrc = `images/${user.image}.svg`;
   return (
-    <div className="col-sm-4">
-      <div className="act-usr">
-        <img className="img-responsive" src={imgSrc} alt={ user.image } />
+    <div className='col-sm-4'>
+      <div className='act-usr'>
+        <img className='img-responsive' src={imgSrc} alt={ user.image } />
         <h2>
           { user.name }
         </h2>
-        <table className="table table-responsive">
+        <table className='table table-responsive'>
           <tbody>
             <tr>
               <td>Age:</td>

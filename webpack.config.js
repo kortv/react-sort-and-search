@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var NpmInstallPlugin = require('npm-install-webpack-plugin');
 var autoprefixer = require('autoprefixer');
 var precss       = require('precss');
 
@@ -39,6 +40,7 @@ module.exports = {
       return [autoprefixer, precss];
   },
   plugins: [
+    new NpmInstallPlugin(),
     new ExtractTextPlugin('style.css', { allChunks: true })
   ]
 };
