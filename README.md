@@ -1,15 +1,10 @@
 # Challenge of JS Raccoon
 
-npm i webpack -g
-<br/>
-npm i webpack-dev-server -g
-<br/>
 npm i
 <br/>
+webpack-dev-server
 <br/>
-npm start
-<br/>
-for runing hot-reloaded server
+localhost:8080
 <br/>
 online link
 <br/>
