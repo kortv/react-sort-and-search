@@ -23,7 +23,7 @@ export default class App extends Component {
     this.loadUsersData();
   }
   loadUsersData = () => {
-    axios.get('http://rtivital.github.io/react-challenge-sort-and-search-solution/data.json')
+    axios.get('/data.json')
          .then(data => {
            this.setState({
              usersData: data.data,
